@@ -1,0 +1,51 @@
+
+--- Initial Account Info ---
+Account Number: S1001
+Account Holder: Alice
+Balance: $1000.00
+Account Type: Savings
+Interest Rate: 3.5%
+Account Number: C1001
+Account Holder: Bob
+Balance: $200.00
+Account Type: Current
+Overdraft Limit: $500.00
+Account Number: F1001
+Account Holder: Charlie
+Balance: $5000.00
+Account Type: Fixed Deposit
+Unlock Date: 2025-10-01
+
+--- Savings Account Operations ---
+[Alice] Deposited $500.00
+[Alice] Interest applied: $52.50
+[Alice] Withdrew $200.00
+
+--- Current Account Operations ---
+[Bob] Withdrew $600.00 (Overdraft Allowed)
+[Bob] Deposited $300.00
+
+--- Attempt Early Withdrawal from Fixed Deposit ---
+Error: Withdrawal not allowed before lock-in period ends.
+
+--- Transfer Funds from Savings to Current ---
+[Alice] Withdrew $300.00
+[Bob] Deposited $300.00
+Transferred $300.00 from Alice to Bob
+
+--- Final Balances ---
+Account Number: S1001
+Account Holder: Alice
+Balance: $1052.50
+Account Type: Savings
+Interest Rate: 3.5%
+Account Number: C1001
+Account Holder: Bob
+Balance: $200.00
+Account Type: Current
+Overdraft Limit: $500.00
+Account Number: F1001
+Account Holder: Charlie
+Balance: $5000.00
+Account Type: Fixed Deposit
+Unlock Date: 2025-10-01
